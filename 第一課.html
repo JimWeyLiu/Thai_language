@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>泰文對話學習</title>
+  <style>
+    body {
+      font-family: Arial, "Noto Sans TC", sans-serif;
+      background: #f5f7fb;
+      margin: 0;
+      padding: 32px;
+      color: #222;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 18px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 16px;
+      padding: 20px;
+      margin-bottom: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    .thai {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 3rem;
+      font-weight: 700;
+      line-height: 1.25;
+      margin-bottom: 12px;
+      color: #0f172a;
+    }
+
+    .zh {
+      font-size: 1.3rem;
+      color: #475569;
+      margin-bottom: 12px;
+    }
+
+    .breakdown {
+      font-size: 1.3rem;
+      background: #f8fafc;
+      border-radius: 12px;
+      padding: 14px;
+      line-height: 1.35;
+    }
+
+    .word {
+      font-weight: 700;
+      color: #1e293b;
+      margin-top: 8px;
+      margin-bottom: 8px;
+    }
+
+    .label {
+      color: #2563eb;
+    }
+
+    .sub {
+      margin-left: 28px;
+      margin-top: -4px;
+      margin-bottom: 6px;
+      color: #64748b;
+      font-size: 1.05rem;
+      line-height: 1.2;
+    }
+
+    .speak-btn {
+      border: none;
+      background: #e2e8f0;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 1.2rem;
+      padding: 6px 10px;
+      transition: 0.2s;
+    }
+
+    .speak-btn:hover {
+      background: #cbd5e1;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>泰文對話學習（17句）</h1>
+
+    <div class="card">
+      <div class="thai">1. สวัสดีครับ ผมชื่อปิติครับ <button class="speak-btn" onclick="speakThai('สวัสดีครับ ผมชื่อปิติครับ')">🔊</button></div>
+      <div class="zh">你好，我叫Piti。</div>
+      <div class="breakdown">
+        <div class="word"><span class="label">大句型</span>：打招呼 ＋ 自我介紹</div>
+        <hr>
+        <div class="word"><span class="label">สวัสดีครับ</span>： 你好 <button class="speak-btn" onclick="speakThai('สวัสดีครับ')">🔊</button></div>
+        <div class="sub">- สวัสดี： 你好 <button class="speak-btn" onclick="speakThai('สวัสดี')">🔊</button></div>
+        <div class="sub">- ครับ： 男性禮貌尾音 <button class="speak-btn" onclick="speakThai('ครับ')">🔊</button></div>
+        <div class="word"><span class="label">ผม</span>： 我（男性用） <button class="speak-btn" onclick="speakThai('ผม')">🔊</button></div>
+        <div class="word"><span class="label">ชื่อปิติ</span>： 叫Piti <button class="speak-btn" onclick="speakThai('ชื่อปิติ')">🔊</button></div>
+        <div class="sub">- ชื่อ： 名字叫 <button class="speak-btn" onclick="speakThai('ชื่อ')">🔊</button></div>
+        <div class="sub">- ปิติ： Piti（名字） <button class="speak-btn" onclick="speakThai('ปิติ')">🔊</button></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="thai">2. สวัสดีค่ะ <button class="speak-btn" onclick="speakThai('สวัสดีค่ะ')">🔊</button></div>
+      <div class="zh">你好。</div>
+      <div class="breakdown">
+        <div class="word"><span class="label">大句型</span>：打招呼</div>
+        <hr>
+        <div class="word"><span class="label">สวัสดี</span>： 你好 <button class="speak-btn" onclick="speakThai('สวัสดี')">🔊</button></div>
+        <div class="word"><span class="label">ค่ะ</span>： 女性禮貌尾音 <button class="speak-btn" onclick="speakThai('ค่ะ')">🔊</button></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="thai">3. ขอโทษครับ คุณชื่ออะไรครับ <button class="speak-btn" onclick="speakThai('ขอโทษครับ คุณชื่ออะไรครับ')">🔊</button></div>
+      <div class="zh">不好意思，你叫什麼名字？</div>
+      <div class="breakdown">
+        <div class="word"><span class="label">大句型</span>：禮貌詢問名字</div>
+        <hr>
+        <div class="word"><span class="label">ขอโทษครับ</span>： 不好意思 <button class="speak-btn" onclick="speakThai('ขอโทษครับ')">🔊</button></div>
+        <div class="sub">- ขอโทษ： 不好意思、抱歉 <button class="speak-btn" onclick="speakThai('ขอโทษ')">🔊</button></div>
+        <div class="sub">- ครับ： 男性禮貌尾音 <button class="speak-btn" onclick="speakThai('ครับ')">🔊</button></div>
+        <div class="word"><span class="label">คุณ</span>： 你／您 <button class="speak-btn" onclick="speakThai('คุณ')">🔊</button></div>
+        <div class="word"><span class="label">ชื่ออะไร</span>： 叫什麼名字 <button class="speak-btn" onclick="speakThai('ชื่ออะไร')">🔊</button></div>
+        <div class="sub">- ชื่อ： 名字叫 <button class="speak-btn" onclick="speakThai('ชื่อ')">🔊</button></div>
+        <div class="sub">- อะไร： 什麼 <button class="speak-btn" onclick="speakThai('อะไร')">🔊</button></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="thai">4. ดิฉันชื่อมะลิค่ะ <button class="speak-btn" onclick="speakThai('ดิฉันชื่อมะลิค่ะ')">🔊</button></div>
+      <div class="zh">我叫Mali。</div>
+      <div class="breakdown">
+        <div class="word"><span class="label">大句型</span>：自我介紹</div>
+        <hr>
+        <div class="word"><span class="label">ดิฉัน</span>： 我（女性用） <button class="speak-btn" onclick="speakThai('ดิฉัน')">🔊</button></div>
+        <div class="word"><span class="label">ชื่อมะลิ</span>： 叫Mali <button class="speak-btn" onclick="speakThai('ชื่อมะลิ')">🔊</button></div>
+        <div class="sub">- ชื่อ： 名字叫 <button class="speak-btn" onclick="speakThai('ชื่อ')">🔊</button></div>
+        <div class="sub">- มะลิ： Mali（名字） <button class="speak-btn" onclick="speakThai('มะลิ')">🔊</button></div>
+        <div class="word"><span class="label">ค่ะ</span>： 女性禮貌尾音 <button class="speak-btn" onclick="speakThai('ค่ะ')">🔊</button></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="thai">5. ยินดีที่ได้รู้จักครับ <button class="speak-btn" onclick="speakThai('ยินดีที่ได้รู้จักครับ')">🔊</button></div>
+      <div class="zh">很高興認識你。</div>
+      <div class="breakdown">
+        <div class="word"><span class="label">大句型</span>：初次見面問候</div>
+        <hr>
+        <div class="word"><span class="label">ยินดี</span>： 高興、開心 <button class="speak-btn" onclick="speakThai('ยินดี')">🔊</button></div>
+        <div class="word"><span class="label">ที่ได้รู้จัก</span>： 能夠認識（你） <button class="speak-btn" onclick="speakThai('ที่ได้รู้จัก')">🔊</button></div>
+        <div class="sub">- ที่： ……這件事 <button class="speak-btn" onclick="speakThai('ที่')">🔊</button></div>
+        <div class="sub">- ได้： 能夠、有機會 <button class="speak-btn" onclick="speakThai('ได้')">🔊</button></div>
+        <div class="sub">- รู้จัก： 認識 <button class="speak-btn" onclick="speakThai('รู้จัก')">🔊</button></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="thai">6. ยินดีที่ได้รู้จักเช่นกันค่ะ คุณปิติเป็นนักศึกษาต่างชาติหรือคะ <button class="speak-btn" onclick="speakThai('ยินดีที่ได้รู้จักเช่นกันค่ะ คุณปิติเป็นนักศึกษาต่างชาติหรือคะ')">🔊</button></div>
+      <div class="zh">我也很高興認識你。Piti是外國學生嗎？</div>
+      <div class="breakdown">
+        <div class="word"><span class="label">大句型</span>：回應問候 ＋ 詢問身份</div>
+        <hr>
+        <div class="word"><span class="label">ยินดี</span>： 高興、開心 <button class="speak-btn" onclick="speakThai('ยินดี')">🔊</button></div>
+        <div class="word"><span class="label">ที่ได้รู้จัก</span>： 能夠認識（你） <button class="speak-btn" onclick="speakThai('ที่ได้รู้จัก')">🔊</button></div>
+        <div class="sub">- ที่： ……這件事 <button class="speak-btn" onclick="speakThai('ที่')">🔊</button></div>
+        <div class="sub">- ได้： 能夠、有機會 <button class="speak-btn" onclick="speakThai('ได้')">🔊</button></div>
+        <div class="sub">- รู้จัก： 認識 <button class="speak-btn" onclick="speakThai('รู้จัก')">🔊</button></div>
+        <div class="word"><span class="label">เช่นกัน</span>： 也一樣 <button class="speak-btn" onclick="speakThai('เช่นกัน')">🔊</button></div>
+        <div class="word"><span class="label">ค่ะ</span>： 女性禮貌尾音 <button class="speak-btn" onclick="speakThai('ค่ะ')">🔊</button></div>
+        <div class="word"><span class="label">คุณปิติ</span>： Piti／你 <button class="speak-btn" onclick="speakThai('คุณปิติ')">🔊</button></div>
+        <div class="word"><span class="label">เป็น</span>： 是 <button class="speak-btn" onclick="speakThai('เป็น')">🔊</button></div>
+        <div class="word"><span class="label">นักศึกษาต่างชาติ</span>： 外國學生／留學生 <button class="speak-btn" onclick="speakThai('นักศึกษาต่างชาติ')">🔊</button></div>
+        <div class="sub">- นักศึกษา： 學生、大學生 <button class="speak-btn" onclick="speakThai('นักศึกษา')">🔊</button></div>
+        <div class="sub">- ต่างชาติ： 外國的、外籍的 <button class="speak-btn" onclick="speakThai('ต่างชาติ')">🔊</button></div>
+        <div class="word"><span class="label">หรือคะ</span>： ～嗎？ <button class="speak-btn" onclick="speakThai('หรือคะ')">🔊</button></div>
+        <div class="sub">- หรือ： 是不是～ <button class="speak-btn" onclick="speakThai('หรือ')">🔊</button></div>
+        <div class="sub">- คะ： 女性問句尾音 <button class="speak-btn" onclick="speakThai('คะ')">🔊</button></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="thai">7. ใช่ครับ ผมมาเรียนภาษาจีน คุณล่ะครับ <button class="speak-btn" onclick="speakThai('ใช่ครับ ผมมาเรียนภาษาจีน คุณล่ะครับ')">🔊</button></div>
+      <div class="zh">是的，我是來學中文的。那你呢？</div>
+      <div class="breakdown">
+        <div class="word"><span class="label">大句型</span>：回答問題 ＋ 反問對方</div>
+        <hr>
+        <div class="word"><span class="label">ใช่ครับ</span>： 是的 <button class="speak-btn" onclick="speakThai('ใช่ครับ')">🔊</button></div>
+        <div class="sub">- ใช่： 是 <button class="speak-btn" onclick="speakThai('ใช่')">🔊</button></div>
+        <div class="sub">- ครับ： 男性禮貌尾音 <button class="speak-btn" onclick="speakThai('ครับ')">🔊</button></div>
+        <div class="word"><span class="label">ผม</span>： 我（男性用） <button class="speak-btn" onclick="speakThai('ผม')">🔊</button></div>
+        <div class="word"><span class="label">มาเรียนภาษาจีน</span>： 來學中文 <button class="speak-btn" onclick="speakThai('มาเรียนภาษาจีน')">🔊</button></div>
+        <div class="sub">- มาเรียน： 來學習 <button class="speak-btn" onclick="speakThai('มาเรียน')">🔊</button></div>
+        <div class="sub">- ภาษาจีน： 中文、華語 <button class="speak-btn" onclick="speakThai('ภาษาจีน')">🔊</button></div>
+        <div class="word"><span class="label">คุณล่ะ</span>： 那你呢？ <button class="speak-btn" onclick="speakThai('คุณล่ะ')">🔊</button></div>
+        <div class="sub">- คุณ： 你 <button class="speak-btn" onclick="speakThai('คุณ')">🔊</button></div>
+        <div class="sub">- ล่ะ： 呢？ <button class="speak-btn" onclick="speakThai('ล่ะ')">🔊</button></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="thai">8. ดิฉันเป็นคนจีนค่ะ คุณปิติมาจากประเทศไหนคะ <button class="speak-btn" onclick="speakThai('ดิฉันเป็นคนจีนค่ะ คุณปิติมาจากประเทศไหนคะ')">🔊</button></div>
+      <div class="zh">我是中國人。Piti來自哪個國家呢？</div>
+      <div class="breakdown">
+        <div class="word"><span class="label">大句型</span>：自我介紹 ＋ 詢問國籍</div>
+        <hr>
+        <div class="word"><span class="label">ดิฉัน</span>： 我（女性用） <button class="speak-btn" onclick="speakThai('ดิฉัน')">🔊</button></div>
+        <div class="word"><span class="label">เป็นคนจีน</span>： 是中國人 <button class="speak-btn" onclick="speakThai('เป็นคนจีน')">🔊</button></div>
+        <div class="sub">- เป็น： 是 <button class="speak-btn" onclick="speakThai('เป็น')">🔊</button></div>
+        <div class="sub">- คนจีน： 中國人 <button class="speak-btn" onclick="speakThai('คนจีน')">🔊</button></div>
+        <div class="word"><span class="label">ค่ะ</span>： 女性禮貌尾音 <button class="speak-btn" onclick="speakThai('ค่ะ')">🔊</button></div>
+        <div class="word"><span class="label">คุณปิติ</span>： Piti／你 <button class="speak-btn" onclick="speakThai('คุณปิติ')">🔊</button></div>
+        <div class="word"><span class="label">มาจาก</span>： 來自 <button class="speak-btn" onclick="speakThai('มาจาก')">🔊</button></div>
+        <div class="sub">- มา： 來 <button class="speak-btn" onclick="speakThai('มา')">🔊</button></div>
+        <div class="sub">- จาก： 從、來自 <button class="speak-btn" onclick="speakThai('จาก')">🔊</button></div>
+        <div class="word"><span class="label">ประเทศไหน</span>： 哪個國家 <button class="speak-btn" onclick="speakThai('ประเทศไหน')">🔊</button></div>
+        <div class="sub">- ประเทศ： 國家 <button class="speak-btn" onclick="speakThai('ประเทศ')">🔊</button></div>
+        <div class="sub">- ไหน： 哪個 <button class="speak-btn" onclick="speakThai('ไหน')">🔊</button></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="thai">9. ผมมาจากประเทศไทยครับ <button class="speak-btn" onclick="speakThai('ผมมาจากประเทศไทยครับ')">🔊</button></div>
+      <div class="zh">我來自泰國。</div>
+      <div class="breakdown">
+        <div class="word"><span class="label">大句型</span>：回答國籍</div>
+        <hr>
+        <div class="word"><span class="label">ผม</span>： 我（男性用） <button class="speak-btn" onclick="speakThai('ผม')">🔊</button></div>
+        <div class="word"><span class="label">มาจาก</span>： 來自 <button class="speak-btn" onclick="speakThai('มาจาก')">🔊</button></div>
+        <div class="sub">- มา： 來 <button class="speak-btn" onclick="speakThai('มา')">🔊</button></div>
+        <div class="sub">- จาก： 從、來自 <button class="speak-btn" onclick="speakThai('จาก')">🔊</button></div>
+        <div class="word"><span class="label">ประเทศไทย</span>： 泰國 <button class="speak-btn" onclick="speakThai('ประเทศไทย')">🔊</button></div>
+        <div class="sub">- ประเทศ： 國家 <button class="speak-btn" onclick="speakThai('ประเทศ')">🔊</button></div>
+        <div class="sub">- ไทย： 泰國 <button class="speak-btn" onclick="speakThai('ไทย')">🔊</button></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="thai">10. คุณเคยมาประเทศจีนไหมคะ <button class="speak-btn" onclick="speakThai('คุณเคยมาประเทศจีนไหมคะ')">🔊</button></div>
+      <div class="zh">你曾經來過中國嗎？</div>
+      <div class="breakdown">
+        <div class="word"><span class="label">大句型</span>：詢問經驗</div>
+        <hr>
+        <div class="word"><span class="label">คุณ</span>： 你／您 <button class="speak-btn" onclick="speakThai('คุณ')">🔊</button></div>
+        <div class="word"><span class="label">เคยมาประเทศจีน</span>： 曾經來過中國 <button class="speak-btn" onclick="speakThai('เคยมาประเทศจีน')">🔊</button></div>
+        <div class="sub">- เคย： 曾經 <button class="speak-btn" onclick="speakThai('เคย')">🔊</button></div>
+        <div class="sub">- มา： 來 <button class="speak-btn" onclick="speakThai('มา')">🔊</button></div>
+        <div class="sub">- ประเทศจีน： 中國 <button class="speak-btn" onclick="speakThai('ประเทศจีน')">🔊</button></div>
+        <div class="word"><span class="label">ไหม</span>： 嗎？ <button class="speak-btn" onclick="speakThai('ไหม')">🔊</button></div>
+        <div class="word"><span class="label">คะ</span>： 女性問句尾音 <button class="speak-btn" onclick="speakThai('คะ')">🔊</button></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="thai">11. ไม่เคยครับ นี่เป็นครั้งแรก <button class="speak-btn" onclick="speakThai('ไม่เคยครับ นี่เป็นครั้งแรก')">🔊</button></div>
+      <div class="zh">沒去過，這是第一次。</div>
+      <div class="breakdown">
+        <div class="word"><span class="label">大句型</span>：回答經驗 ＋ 補充說明</div>
+        <hr>
+        <div class="word"><span class="label">ไม่เคยครับ</span>： 沒去過 <button class="speak-btn" onclick="speakThai('ไม่เคยครับ')">🔊</button></div>
+        <div class="sub">- ไม่： 不、沒有 <button class="speak-btn" onclick="speakThai('ไม่')">🔊</button></div>
+        <div class="sub">- เคย： 曾經 <button class="speak-btn" onclick="speakThai('เคย')">🔊</button></div>
+        <div class="sub">- ครับ： 男性禮貌尾音 <button class="speak-btn" onclick="speakThai('ครับ')">🔊</button></div>
+        <div class="word"><span class="label">นี่</span>： 這、這個 <button class="speak-btn" onclick="speakThai('นี่')">🔊</button></div>
+        <div class="word"><span class="label">เป็น</span>： 是 <button class="speak-btn" onclick="speakThai('เป็น')">🔊</button></div>
+        <div class="word"><span class="label">ครั้งแรก</span>： 第一次 <button class="speak-btn" onclick="speakThai('ครั้งแรก')">🔊</button></div>
+        <div class="sub">- ครั้ง： 次、回 <button class="speak-btn" onclick="speakThai('ครั้ง')">🔊</button></div>
+        <div class="sub">- แรก： 第一、最初 <button class="speak-btn" onclick="speakThai('แรก')">🔊</button></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="thai">12. คุณปิติเรียนที่ไหนคะ <button class="speak-btn" onclick="speakThai('คุณปิติเรียนที่ไหนคะ')">🔊</button></div>
+      <div class="zh">Piti在哪裡讀書呢？</div>
+      <div class="breakdown">
+        <div class="word"><span class="label">大句型</span>：詢問讀書地點</div>
+        <hr>
+        <div class="word"><span class="label">คุณปิติ</span>： Piti／你 <button class="speak-btn" onclick="speakThai('คุณปิติ')">🔊</button></div>
+        <div class="word"><span class="label">เรียน</span>： 學習、讀書 <button class="speak-btn" onclick="speakThai('เรียน')">🔊</button></div>
+        <div class="word"><span class="label">ที่ไหน</span>： 哪裡 <button class="speak-btn" onclick="speakThai('ที่ไหน')">🔊</button></div>
+        <div class="sub">- ที่： 地方、在 <button class="speak-btn" onclick="speakThai('ที่')">🔊</button></div>
+        <div class="sub">- ไหน： 哪裡 <button class="speak-btn" onclick="speakThai('ไหน')">🔊</button></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="thai">13. เรียนที่มหาวิทยาลัยภาษาและการค้าต่างประเทศกวางตุ้งครับ <button class="speak-btn" onclick="speakThai('เรียนที่มหาวิทยาลัยภาษาและการค้าต่างประเทศกวางตุ้งครับ')">🔊</button></div>
+      <div class="zh">我在廣東外語外貿大學讀書。</div>
+      <div class="breakdown">
+        <div class="word"><span class="label">大句型</span>：回答讀書地點</div>
+        <hr>
+        <div class="word"><span class="label">เรียนที่มหาวิทยาลัยภาษาและการค้าต่างประเทศกวางตุ้ง</span>： 在廣東外語外貿大學讀書 <button class="speak-btn" onclick="speakThai('เรียนที่มหาวิทยาลัยภาษาและการค้าต่างประเทศกวางตุ้ง')">🔊</button></div>
+        <div class="sub">- เรียนที่： 在……讀書 <button class="speak-btn" onclick="speakThai('เรียนที่')">🔊</button></div>
+        <div class="sub">- มหาวิทยาลัย： 大學 <button class="speak-btn" onclick="speakThai('มหาวิทยาลัย')">🔊</button></div>
+        <div class="sub">- ภาษา： 語言 <button class="speak-btn" onclick="speakThai('ภาษา')">🔊</button></div>
+        <div class="sub">- และ： 和、以及 <button class="speak-btn" onclick="speakThai('และ')">🔊</button></div>
+        <div class="sub">- การค้า： 貿易、商業 <button class="speak-btn" onclick="speakThai('การค้า')">🔊</button></div>
+        <div class="sub">- ต่างประเทศ： 外國、國外 <button class="speak-btn" onclick="speakThai('ต่างประเทศ')">🔊</button></div>
+        <div class="sub">- กวางตุ้ง： 廣東 <button class="speak-btn" onclick="speakThai('กวางตุ้ง')">🔊</button></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="thai">14. ดีจัง ดิฉันก็เรียนที่นั่นค่ะ <button class="speak-btn" onclick="speakThai('ดีจัง ดิฉันก็เรียนที่นั่นค่ะ')">🔊</button></div>
+      <div class="zh">真好，我也在那裡讀書。</div>
+      <div class="breakdown">
+        <div class="word"><span class="label">大句型</span>：日常回應 ＋ 補充說明</div>
+        <hr>
+        <div class="word"><span class="label">ดีจัง</span>： 真好、真不錯 <button class="speak-btn" onclick="speakThai('ดีจัง')">🔊</button></div>
+        <div class="sub">- ดี： 好 <button class="speak-btn" onclick="speakThai('ดี')">🔊</button></div>
+        <div class="sub">- จัง： 呀、呢（加強語氣） <button class="speak-btn" onclick="speakThai('จัง')">🔊</button></div>
+        <div class="word"><span class="label">ดิฉัน</span>： 我（女性用） <button class="speak-btn" onclick="speakThai('ดิฉัน')">🔊</button></div>
+        <div class="word"><span class="label">ก็</span>： 也 <button class="speak-btn" onclick="speakThai('ก็')">🔊</button></div>
+        <div class="word"><span class="label">เรียนที่นั่น</span>： 在那裡讀書 <button class="speak-btn" onclick="speakThai('เรียนที่นั่น')">🔊</button></div>
+        <div class="sub">- เรียน： 學習、讀書 <button class="speak-btn" onclick="speakThai('เรียน')">🔊</button></div>
+        <div class="sub">- ที่นั่น： 那裡 <button class="speak-btn" onclick="speakThai('ที่นั่น')">🔊</button></div>
+        <div class="word"><span class="label">ค่ะ</span>： 女性禮貌尾音 <button class="speak-btn" onclick="speakThai('ค่ะ')">🔊</button></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="thai">15. คุณมะลิเรียนวิชาอะไรครับ <button class="speak-btn" onclick="speakThai('คุณมะลิเรียนวิชาอะไรครับ')">🔊</button></div>
+      <div class="zh">Mali學什麼科目呢？</div>
+      <div class="breakdown">
+        <div class="word"><span class="label">大句型</span>：詢問學習科目</div>
+        <hr>
+        <div class="word"><span class="label">คุณมะลิ</span>： Mali／你 <button class="speak-btn" onclick="speakThai('คุณมะลิ')">🔊</button></div>
+        <div class="word"><span class="label">เรียน</span>： 學習、讀書 <button class="speak-btn" onclick="speakThai('เรียน')">🔊</button></div>
+        <div class="word"><span class="label">วิชาอะไร</span>： 什麼科目 <button class="speak-btn" onclick="speakThai('วิชาอะไร')">🔊</button></div>
+        <div class="sub">- วิชา： 科目 <button class="speak-btn" onclick="speakThai('วิชา')">🔊</button></div>
+        <div class="sub">- อะไร： 什麼 <button class="speak-btn" onclick="speakThai('อะไร')">🔊</button></div>
+        <div class="word"><span class="label">ครับ</span>： 男性禮貌尾音 <button class="speak-btn" onclick="speakThai('ครับ')">🔊</button></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="thai">16. วิชาภาษาไทยค่ะ ดิฉันเป็นนักศึกษาชั้นปีที่หนึ่ง รู้ภาษาไทยนิดหน่อยค่ะ <button class="speak-btn" onclick="speakThai('วิชาภาษาไทยค่ะ ดิฉันเป็นนักศึกษาชั้นปีที่หนึ่ง รู้ภาษาไทยนิดหน่อยค่ะ')">🔊</button></div>
+      <div class="zh">泰文。我是一年級學生，懂一點點泰文。</div>
+      <div class="breakdown">
+        <div class="word"><span class="label">大句型</span>：回答科目 ＋ 自我補充</div>
+        <hr>
+        <div class="word"><span class="label">วิชาภาษาไทย</span>： 泰文科／泰語課 <button class="speak-btn" onclick="speakThai('วิชาภาษาไทย')">🔊</button></div>
+        <div class="sub">- วิชา： 科目 <button class="speak-btn" onclick="speakThai('วิชา')">🔊</button></div>
+        <div class="sub">- ภาษาไทย： 泰文、泰語 <button class="speak-btn" onclick="speakThai('ภาษาไทย')">🔊</button></div>
+        <div class="word"><span class="label">ค่ะ</span>： 女性禮貌尾音 <button class="speak-btn" onclick="speakThai('ค่ะ')">🔊</button></div>
+        <div class="word"><span class="label">ดิฉัน</span>： 我（女性用） <button class="speak-btn" onclick="speakThai('ดิฉัน')">🔊</button></div>
+        <div class="word"><span class="label">เป็น</span>： 是 <button class="speak-btn" onclick="speakThai('เป็น')">🔊</button></div>
+        <div class="word"><span class="label">นักศึกษาชั้นปีที่หนึ่ง</span>： 一年級學生 <button class="speak-btn" onclick="speakThai('นักศึกษาชั้นปีที่หนึ่ง')">🔊</button></div>
+        <div class="sub">- นักศึกษา： 學生、大學生 <button class="speak-btn" onclick="speakThai('นักศึกษา')">🔊</button></div>
+        <div class="sub">- ชั้นปีที่หนึ่ง： 一年級 <button class="speak-btn" onclick="speakThai('ชั้นปีที่หนึ่ง')">🔊</button></div>
+        <div class="word"><span class="label">รู้ภาษาไทย</span>： 懂泰文 <button class="speak-btn" onclick="speakThai('รู้ภาษาไทย')">🔊</button></div>
+        <div class="sub">- รู้： 懂、知道 <button class="speak-btn" onclick="speakThai('รู้')">🔊</button></div>
+        <div class="sub">- ภาษาไทย： 泰文 <button class="speak-btn" onclick="speakThai('ภาษาไทย')">🔊</button></div>
+        <div class="word"><span class="label">นิดหน่อย</span>： 一點點 <button class="speak-btn" onclick="speakThai('นิดหน่อย')">🔊</button></div>
+        <div class="word"><span class="label">ค่ะ</span>： 女性禮貌尾音 <button class="speak-btn" onclick="speakThai('ค่ะ')">🔊</button></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="thai">17. เรียนภาษาไทยสนุกไหมครับ <button class="speak-btn" onclick="speakThai('เรียนภาษาไทยสนุกไหมครับ')">🔊</button></div>
+      <div class="zh">學泰文有趣嗎？</div>
+      <div class="breakdown">
+        <div class="word"><span class="label">大句型</span>：詢問感受</div>
+        <hr>
+        <div class="word"><span class="label">เรียนภาษาไทย</span>： 學泰文 <button class="speak-btn" onclick="speakThai('เรียนภาษาไทย')">🔊</button></div>
+        <div class="sub">- เรียน： 學習 <button class="speak-btn" onclick="speakThai('เรียน')">🔊</button></div>
+        <div class="sub">- ภาษาไทย： 泰文、泰語 <button class="speak-btn" onclick="speakThai('ภาษาไทย')">🔊</button></div>
+        <div class="word"><span class="label">สนุกไหม</span>： 有趣嗎？ <button class="speak-btn" onclick="speakThai('สนุกไหม')">🔊</button></div>
+        <div class="sub">- สนุก： 有趣、好玩 <button class="speak-btn" onclick="speakThai('สนุก')">🔊</button></div>
+        <div class="sub">- ไหม： 嗎？ <button class="speak-btn" onclick="speakThai('ไหม')">🔊</button></div>
+        <div class="word"><span class="label">ครับ</span>： 男性禮貌尾音 <button class="speak-btn" onclick="speakThai('ครับ')">🔊</button></div>
+      </div>
+    </div>
+
+  </div>
+  <script>
+    function speakThai(text) {
+      const utterance = new SpeechSynthesisUtterance(text);
+      utterance.lang = 'th-TH';
+      utterance.rate = 0.9;
+      speechSynthesis.cancel();
+      speechSynthesis.speak(utterance);
+    }
+  </script>
+</body>
+</html>
+</html>
